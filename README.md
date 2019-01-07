@@ -1,10 +1,17 @@
 # CNN-based aerodynamics parameters prediction method
 CNN for airfoil lift-to-drag-ratio prediction
 
-This repository contains data, code, and results for implementing a airfoil lift-to-drag ratio prediction method based on Convolutional Neural Network.
-```
-/data/raw_data/foil_figure.rar: 
-    a fold of all filled-in grayscale airfoil contour figures generated from coordinates txtx files 
-    downloaded from``` [UIUC Airfoil Data Site](https://m-selig.ae.illinois.edu/ads/coord_database.html).
+This repository contains data, code, and results for implementing a airfoil lift-to-drag ratio prediction method based on Convolutional Neural Network.  
+**/data/raw_data/foil_figure.rar:**   
+a file of all filled-in grayscale airfoil contour figures generated from coordinates txtx files downloaded from [UIUC Airfoil Data Site](https://m-selig.ae.illinois.edu/ads/coord_database.html).  
+**/data/raw_data/csv.zip:**  
+a file of all samples' lift-to-drag ratio calculated by Xflr5 ![XFLR5-LOGO](http://www.xflr5.com/images/XFLR5_Logo.png)  
+**/data/parsed_data/1_300.mat**  
+the above raw data is parsed into .mat file for loading  
+**/source/raw_data_parsing.py**  
+This .py file shows steps of building a NIST36-alike organized dataset from raw data  
+Please unzip 1_300.mat and modify directory and then run it. You can pass all data, which is a 4.2 GB 1_1550.mat file.  
+**/source/CNN.py**  
+Run this file to load, train and print testset result
     
 
