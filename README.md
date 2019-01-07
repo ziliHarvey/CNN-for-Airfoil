@@ -10,7 +10,7 @@ This repository contains data, code, and results for implementing a airfoil lift
 python CNN.py
 ```
 
-## _contents_  
+## _Contents_  
 **/data/raw_data/foil_figure.rar:**   
 &emsp;a file of all filled-in grayscale airfoil contour figures generated from coordinates txt files from [UIUC Airfoil Data Site](https://m-selig.ae.illinois.edu/ads/coord_database.html).  
 **/data/raw_data/csv.zip:**  
