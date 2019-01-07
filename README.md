@@ -1,7 +1,7 @@
 # CNN-based aerodynamics parameters prediction method
 CNN for airfoil lift-to-drag-ratio prediction
 
-This repository contains data, code, and results for implementing a airfoil lift-to-drag ratio prediction method based on Convolutional Neural Network. The network model can take into cnn model `the airfoil contour` and predict its `areodynamics parameters` such as lift-to-drag ratio.  
+This repository contains data, code, and results for implementing an airfoil lift-to-drag ratio prediction method based on Convolutional Neural Network. The network model can take into cnn model `the airfoil contour` and predict its `areodynamics parameters` such as lift-to-drag ratio.  
 ## _What we achieved:_   
 **Data Pre-processing:** raw_data_parsing.py provided a way to transform the inconsistent raw coordinates data into dimension-unified matrices, this actually gives birth to a new easy-to-process upgraded version of UIUC dataset.  
 **Model building:**   This CNN models runs 5000 times faster than commercial CFD software with relative low error (i.e Test MSE 0.36 after 200 epoch's training)
@@ -20,9 +20,9 @@ python CNN.py
 &emsp;the above raw data is parsed into .mat file for loading  
 **/source/raw_data_parsing.py**  
 &emsp;This .py file shows steps of building a NIST36-alike organized dataset from raw data  
-&emsp;Please unzip 1_300.mat and modify directory and then run it. You can pass all data, which is a 4.2 GB 1_1550.mat file.  
+&emsp;Please unzip raw data and modify directory and then run it. You can pass all data, which is a 4.2 GB 1_1550.mat file.  
 **/source/CNN.py**  
-&emsp;Run this file to load, train and print testset result  
+&emsp;Run this file to load parsed data 1_300.mat, train and print testset result  
 
  <img src="https://github.com/ziliHarvey/CNN--based-aerodynamics-parameters-prediction-method/raw/master/cnn.png">
 
