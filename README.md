@@ -5,7 +5,8 @@ This repository contains data, code, and results for implementing a airfoil lift
 ## _What we achieved:_   
 **Data Pre-processing:** raw_data_parsing.py provided a way to transform the inconsistent raw coordinates data into dimension-unified matrices, this actually gives birth to a new easy-to-process upgraded version of UIUC dataset.  
 **Model building:**   This CNN models runs 5000 times faster than commercial CFD software with relative low error (i.e Test MSE 0.36 after 200 epoch's training)
-
+## How to run  
+Be sure to install Pytorch (GPU version recommended) environment with numpy, scipy and matplotlib packages.
 ```python
 python CNN.py
 ```
@@ -23,4 +24,8 @@ python CNN.py
 **/source/CNN.py**  
 &emsp;Run this file to load, train and print testset result  
 ![](https://github.com/ziliHarvey/CNN--based-aerodynamics-parameters-prediction-method/raw/master/cnn.png)    
-
+## Licence  
+The source code is released under MIT Licence.  
+This research is led by Haolin Liu, Zi Li and Fei Lu.  
+Please cite properly when refer to our contents and parsed dataset in the report.  
+Welcome to contact me at zili@andrew.cmu.edu for any question or suggestion.
