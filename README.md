@@ -5,7 +5,7 @@ This repository contains data, code, and results for implementing a airfoil lift
 ## _What we achieved:_   
 **Data Pre-processing:** raw_data_parsing.py provided a way to transform the inconsistent raw coordinates data into dimension-unified matrices, this actually gives birth to a new easy-to-process upgraded version of UIUC dataset.  
 **Model building:**   This CNN models runs 5000 times faster than commercial CFD software with relative low error (i.e Test MSE 0.36 after 200 epoch's training)
-## How to run  
+## _How to run_  
 Be sure to install Pytorch (GPU version recommended) environment with numpy, scipy and matplotlib packages.
 ```python
 python CNN.py
@@ -23,8 +23,16 @@ python CNN.py
 &emsp;Please unzip 1_300.mat and modify directory and then run it. You can pass all data, which is a 4.2 GB 1_1550.mat file.  
 **/source/CNN.py**  
 &emsp;Run this file to load, train and print testset result  
-![](https://github.com/ziliHarvey/CNN--based-aerodynamics-parameters-prediction-method/raw/master/cnn.png)    
-## Licence  
+
+ <img src="https://github.com/ziliHarvey/CNN--based-aerodynamics-parameters-prediction-method/raw/master/cnn.png">
+
+## _Result_
+ <p align="left">
+ <img src="https://github.com/ziliHarvey/CNN--based-aerodynamics-parameters-prediction-method/raw/master/result/loss_vs_epoch.png" width="50%" height="50%">
+ <img src="https://github.com/ziliHarvey/CNN--based-aerodynamics-parameters-prediction-method/raw/master/result/local_result.png" width="50%" height="50%">
+ </p>
+
+## _Licence_  
 The source code is released under MIT Licence.  
 This research is led by Haolin Liu, Zi Li and Fei Lu.  
 Please cite properly when refer to our contents and parsed dataset in the report.  
