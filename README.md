@@ -5,6 +5,6 @@ This repository contains data, code, and results for implementing a airfoil lift
 ```
 /data/raw_data/foil_figure.rar: 
     a fold of all filled-in grayscale airfoil contour figures generated from coordinates txtx files 
-    downloaded from [UIUC Airfoil Data Site](https://m-selig.ae.illinois.edu/ads/coord_database.html/)
+    downloaded from [UIUC Airfoil Data Site](https://m-selig.ae.illinois.edu/ads/coord_database.html).
     
 ```
