@@ -3,7 +3,9 @@ CNN for airfoil lift-to-drag-ratio prediction
 
 This repository contains data, code, and results for implementing an airfoil lift-to-drag ratio prediction method based on Convolutional Neural Network. The network model can take into cnn model `the airfoil contour` and predict its `areodynamics parameters` such as lift-to-drag ratio.  
 ## _What we achieved:_   
-**Data Pre-processing:** raw_data_parsing.py provided a way to transform the inconsistent raw coordinates data into dimension-unified matrices, this actually gives birth to a new easy-to-process upgraded version of UIUC dataset.  
+**Data Pre-processing:** raw_data_parsing.py provided a way to transform the inconsistent raw coordinates data into dimension-unified matrices, this actually gives birth to a new easy-to-process upgraded version of UIUC dataset.
+<center><img src="https://github.com/ziliHarvey/CNN-for-Airfoil/raw/master/piperline.png" width=30% height=30%></center>
+
 **Model building:**   This CNN models runs 5000 times faster than commercial CFD software with relative low error (i.e Test MSE 0.36 after 200 epoch's training)
 ## _How to run_  
 Be sure to install Pytorch (GPU version recommended) environment with numpy, scipy and matplotlib packages.
